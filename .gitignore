@@ -2,9 +2,9 @@
                 macOS template
 ##################################################
 # General
-								.DS_Store
-								.AppleDouble
-								.LSOverride
+.DS_Store
+.AppleDouble
+.LSOverride
 
 # Icon must end with two \r
 Icon
@@ -173,8 +173,22 @@ yandex_<SomeHash>.html
 ##########################
 /wordpress/wp-content/themes/twenty*
 
+
 ##################################################
                 Docker Image
 ##################################################
 /docker/logs/
 /docker/db-data/
+
+############################
+# ignore wordpress folders #
+############################
+/wordpress/
+
+#################################
+# ignore specific theme folders #
+#################################
+/base-theme/vendor/
+/base-theme/dist/
+/base-theme/node_modules/
+/base-theme/.cache-loader/
