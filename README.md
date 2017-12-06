@@ -1,9 +1,9 @@
 # Wordpress Theme
 
-## Files Descriptions
+### Files Descriptions
 
-## Install Frontend Dependencies
+### Install Frontend Dependencies
 
-## Install Backend Dependencies
+### Install Backend Dependencies
 
-## Deploy the container on Heroku
+### Deploy the container on Heroku
