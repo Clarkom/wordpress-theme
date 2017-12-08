@@ -14,10 +14,8 @@ services:
       container_name: nginx
       ports:
         - '80:80'
-        - '443:443'
       volumes:
         - ./docker/nginx/conf:/etc/nginx/conf.d/
-        - ./docker/nginx/ssl:/etc/nginx/ssl
         - ./docker/logs/nginx:/var/log/nginx
         - ./wordpress:/var/www/html
       build: ./docker/nginx/
@@ -50,6 +48,7 @@ services:
         - '4000:4000'
       volumes:
         - ./base-theme/:/var/www/html/wp-content/themes/base-theme/
+        - ./wordpress:/var/www/html
       environment:
         - WORDPRESS_DB_NAME=wp_wordpress
         - WORDPRESS_TABLE_PREFIX=px_
