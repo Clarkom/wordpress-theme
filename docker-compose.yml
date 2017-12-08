@@ -17,7 +17,6 @@ services:
         - '443:443'
       volumes:
         - ./docker/nginx/conf:/etc/nginx/conf.d/
-        - ./docker/nginx/ssl:/etc/nginx/ssl
         - ./docker/logs/nginx:/var/log/nginx
         - ./wordpress:/var/www/html
       build: ./docker/nginx/
